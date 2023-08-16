@@ -1,0 +1,22 @@
+ int main()
+ {
+     int reversed=0,original,n,reminder;
+     printf("enter the number:");
+     scanf("%d",&n);
+     original=n;
+     while(n!=0)
+     {
+       reminder=n%10;
+       reversed=reversed*10+reminder;
+       n=n/10;
+     }
+     if (original==reversed)
+     {
+         printf("its a polindrome");
+     }
+     else
+     {
+         printf("not a polindrome");
+     }
+     return 0;
+ }
