@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int len,i,flag=0;
+    char str[40];
+    printf("enter the string:");
+    scanf("%s",str);
+    len=strlen(str);
+    for(i=0;i<len;i++)
+    {
+        if(str[i]!=str[len-i-1])
+        flag=1;
+        break;
+    }
+    if(flag)
+    {
+        printf(" not a polindrome",str);
+    }
+    else
+    {
+        printf("a polndrome",str);
+    }
+    return 0;
+}
