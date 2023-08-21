@@ -1,0 +1,30 @@
+#include <stdio.h>
+int fact(int n)
+{
+	if (n<=1)
+	return 1;
+	else
+{
+	
+	return n*fact(n-1);
+}
+
+
+}
+int main()
+{
+	int n,i,j,coefficent;
+	printf("enter the number of rows:");
+	scanf("%d",&n);
+	for(i=0;i<=n;i++)
+	{
+	
+	for(j=0;j<=i;j++)
+	{
+		coefficent=fact(i)/(fact(j)*fact(i-j));
+		printf("%d",coefficent);
+	}
+	printf("\n");
+}
+return 0;
+}
